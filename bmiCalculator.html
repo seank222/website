@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <script>
+        //BMI = weight (kg) / height (cm) square
+
+        //Create function here
+        //if my weight is 85kg and my height is 1.83, I should be able to call your function like this
+        //var bmi = bmiCalculator(85, 1.83);
+
+        function bmiCalculator(weight, height) {
+            var bmi = weight / Math.pow(height, 2);
+            return Math.round(bmi);
+        }
+
+        bmi = bmiCalculator(85, 1.83);
+
+        console.log(bmi);
+
+        //bmi should be equal around 25.4
+    </script>
+</body>
+</html>
